@@ -1,0 +1,502 @@
+@import url("http://139.62.210.181/default.css");
+
+/* You will use this CSS file for each of your projects. Simply add new CSS selectors and elements to the end of the file. */
+
+/* Be careful to keep your selector names unique to avoid collisions, which can cause confusion. */
+
+/* DO NOT MODIFY OR REMOVE THE @import STATEMENT ABOVE */
+/* ----------------------------------------- */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  overflow-x: hidden;
+}  
+
+/* Project 1*/
+.project1 {
+    text-align: center;
+    font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #C4E1E6
+}
+
+.head-nav {
+  justify-content: center;
+  background-color: #8DBCC7;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 2px solid #EBFFD8;
+}
+
+.head-nav a {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #8DBCC7;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  transform-origin: center;
+  margin: 0 0.5rem;
+}
+
+.head-nav a:hover {
+  background-color: #6aa4b1;
+  transform: scale(1.5);
+}
+
+.section-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+
+.section-container > section {
+  flex: 1;
+  background: #A4CCD9;
+  border: 1px solid #EBFFD8;
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-height: 500px;
+  overflow: auto;
+}
+.section-container p {
+  text-align: left;
+  max-height: 800px;
+  overflow: auto;
+}
+
+.section-container a:hover {
+  font-size: 150%;
+}
+
+#Intro h2 {
+  color: red;
+}
+
+#Hobbies h2 {
+  color: green;
+}
+
+#Education h2 {
+  color: blue;
+}
+
+.diploma span{
+  font-style: italic;
+}
+
+.degree span{
+  font-weight: bold;
+}
+
+.cert span{
+  text-decoration: underline;
+}
+
+.foot-nav {
+  justify-content: center;
+  background-color: #8DBCC7;
+  width: 100%;
+  padding: 1rem;
+  border-top: 2px solid #EBFFD8;
+}
+
+.foot-nav a {
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #8DBCC7;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  transform-origin: center;
+  margin: 0 0.5rem;
+}
+
+.foot-nav a:hover {
+  background-color: #6aa4b1;
+  transform: scale(1.5);
+}
+
+.head-nav-static {
+  justify-content: center;
+  background-color: #8DBCC7;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 2px solid #EBFFD8;
+}
+
+.head-nav-static a {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #8DBCC7;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  transform-origin: center;
+  margin: 0 0.5rem;
+}
+
+.courses {
+  width: 100%;
+}
+
+.courses, .courses th, .courses td {
+  border: none;
+  border-collapse: collapse;
+}
+
+.scheduleB {
+  text-align: center;
+}
+
+.events{
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li.Month {
+  padding-left: 1.5rem;
+}
+
+.p1thead {
+  background-color: #A4CCD9;
+}
+
+.rowO {
+  background-color: #EBFFD8;
+;
+}
+
+.rowE {
+  background-color: #C77F8D;
+}
+
+.foot-nav-static {
+  display: flex;
+  justify-content: center;
+  background-color: #8DBCC7;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid #EBFFD8;
+}
+
+.foot-nav-static a {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #8DBCC7;
+  margin: 0 0.5rem;
+}
+
+.account-info, .majors,.languages {
+  text-align: left;
+  border: 1px solid #EBFFD8;
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+}
+
+fieldset.majors .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+fieldset.majors input:checked ~ .checkmark {
+  background-color: green;
+}
+
+.check-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+}
+
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.languages .languages-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.languages .languages-box {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+fieldset.languages .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+}
+
+fieldset.languages input:checked ~ .checkmark {
+  background-color: blue;
+}
+
+.p1buttons {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* Project 2 */
+
+.project2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:  #3A0519;
+    color: lightgrey;
+    padding-top: 2rem;
+}
+
+.p2-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.p2-section-container > section {
+  border-radius: 6px;
+  padding: 0;
+  max-height: 500px;
+  overflow: auto;
+}
+
+#Shipping h2 {
+  color: #EF88AD;
+  text-align: center;
+}
+
+#Billing h2 {
+  color: #A53860;
+  text-align: center;
+}
+
+#Payment h2 {
+  color: #822aae;
+  text-align: center;
+}
+
+#Payment img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+section .form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+section label {
+  width: 100%;
+}
+
+.wide {
+  flex: 2;
+  width: 350px;
+}
+
+.thin{
+  flex: 1;
+  width: 50px;
+}
+
+.project2 hr {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border: none;
+  border-top: 4px solid #670D2F;
+  border-bottom: 4px solid #A53860;
+}
+
+.project2 .form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.p2-check-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 1rem;
+}
+
+.p2-check-wrapper input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.p2-checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: grey; 
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.p2-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.p2-check-wrapper input[type="checkbox"]:checked + .p2-checkmark {
+  background-color: blue;
+}
+
+.p2-check-wrapper input:checked ~ .p2-checkmark:after {
+  display: block;
+}
+
+.p2-check-wrapper input[type="checkbox"]:checked + .p2-checkmark:after {
+  display: block;
+}
+
+.cvv-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cvv-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cvv-tooltip .material-icons {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.cvv-help {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  left: 130%;
+  top: 130%;
+  transform: translateY(-50%);
+  width: 90px;
+  background-color: #280A1B;
+  color: lightgray;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 0.85rem;
+  z-index: 1;
+  white-space: normal;
+}
+
+.cvv-tooltip:hover .cvv-help {
+  visibility: visible;
+  opacity: 1;
+}
+
+.p2buttons button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.p2buttons button img {
+  vertical-align: middle;
+}
+
+.p2-foot-nav {
+  justify-content: center;
+  background-color: #670D2F;
+  color: lightgray;
+  width: 100%;
+  padding: 1.5rem;
+  border-top: 2px solid #A53860;
+  margin-top: 1.5rem;
+}
+
+.p2-foot-nav a {
+  color: lightgray;
+  text-decoration: none;
+  transition: border 0.2s ease, padding 0.2s ease;
+}
+
+.p2-foot-nav a:hover {
+  border: 2px solid #EF88AD;
+  padding: 1rem 1.3rem;
+  border-radius: 4px;
+  background-color: #A53860;
+  transform: scale(1.1);
+}
+
+.p2-foot-nav a:visited {
+  color: lightgray;
+}
