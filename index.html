@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="lang-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Payment Information</title>
+		<link rel="stylesheet" href="css/mySite.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body onLoad="initializeForm();">
+		<div class="project2">
+			<h1>Enter Payment Information</h1>
+			<form onSubmit="validateForm(); return false;">
+				<div class="p2-section-container">
+					<section id="Shipping">
+						<h2>Shipping Information</h2>
+					
+						<div class="form-row">
+							<div class="form-input">
+								<label for="shippingFirst">First Name</label>
+								<input type="text" name="first" id="shippingFirst" required>
+							</div>
+					
+							<div class="form-input">
+								<label for="shippingLast">Last Name</label>
+								<input type="text" name="last" id="shippingLast" required>
+							</div>
+						</div>
+					
+						<div class="form-input">
+							<label for="shippingHome">Address</label>
+							<input type="text" name="home" id="shippingHome" class="wide" placeholder="1 UNF Drive" required>
+						</div>
+
+						<div class="form-row">
+							<div class="form-input">
+								<label for="phone">Phone Number</label>
+								<input type="text" name="phone" id="phone" required>
+							</div>
+					
+							<div class="form-input">
+								<label for="email">Email Address</label>
+								<input type="text" name="email" id="email" placeholder="name@domain.com" required>
+							</div>
+						</div>
+					
+						<div class="form-row">
+							<div class="form-input">
+								<label for="shippingCity">City</label>
+								<input type="text" name="city" id="shippingCity" required>
+							</div>
+
+							<div class="form-input">
+								<label for="shippingState">State</label>
+								<select name="state" id="shippingState" class="state-choice"></select>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-input">
+								<label for="shippingZip">Zip</label>
+								<input type="text" name="zip" id="shippingZip" placeholder="12345" required>
+							</div>
+						
+							<div class="form-input">
+								<label for="delivDate">Preferred Delivery Date</label>
+								<input type="date" name="delivDate" id="delivDate">
+							</div>
+						</div>
+
+					</section>
+					<hr>
+					<section id="Billing">
+						<h2>Billing Information</h2>
+
+						<label class="p2-check-wrapper" for="same">
+							<input type="checkbox" id="same" name="same" onchange="updateBilling();">
+							<span class="p2-checkmark"></span>
+							Same as Shipping
+						</label>
+
+						<div class="form-row">
+							<div class="form-input">
+								<label for="billingFirst">First Name</label>
+								<input type="text" name="first" id="billingFirst" required>
+							</div>
+					
+							<div class="form-input">
+								<label for="billingLast">Last Name</label>
+								<input type="text" name="last" id="billingLast" required>
+							</div>
+						</div>
+					
+						<div class="form-input">
+							<label for="billingHome">Address</label>
+							<input type="text" name="home" id="billingHome" class="wide" placeholder="1 UNF Drive" required>
+						</div>
+					
+						<div class="form-row">
+							<div class="form-input">
+								<label for="billingCity">City</label>
+								<input type="text" name="city" id="billingCity" required>
+							</div>
+
+							<div class="form-input">
+								<label for="billingState">State</label>
+								<select name="state" id="billingState" class="state-choice"></select>
+							</div>
+						</div>
+				
+						<div class="form-input">
+							<label for="billingZip">Zip</label>
+							<input type="text" name="zip" id="billingZip" placeholder="12345" required>
+						</div>
+					</section>
+					<hr>
+					<section id="Payment">
+
+						<h2>Payment Method</h2>
+					
+						<img src="Project 2 Images/AmEx.png" alt="American Express" >
+						<img src="Project 2 Images/Discover.png" alt="Discover" >
+						<img src="Project 2 Images/MasterCard.png" alt="Master" >
+						<img src="Project 2 Images/Visa.png" alt="Visa" >
+					
+						<div class="form-input">
+							<label for="nameOnCard">Name on Card</label>
+							<input type="text" name="name" id="nameOnCard" class="wide" required>
+						</div>
+				
+						<div class="form-input">
+							<label for="card">Card Number</label>
+							<input type="text" name="card" id="card" class="wide" required>
+						</div>
+
+						<div class="form-row">
+							<div class="form-input">
+								<label for="expiration">Expiration Date</label>
+								<input type="month" name="month" id="expiration">
+							</div>
+
+							<div class="form-input">
+								<label for="cvv" class="cvv-label">
+									CVV Code
+									<span class="cvv-tooltip">
+									<i class="material-icons">info</i>
+									<span class="cvv-help"><a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank">CVV</a> 3-digit security code on the back of your</span>
+									</span>
+								</label>
+								<input type="text" name="cvv" id="cvv" class="thin" placeholder="123" required>
+							</div>
+
+						</div>
+
+					</section>
+				</div>
+
+				<div class="p2buttons">
+					<button type="submit"><img src="Project 2 Images/PayNow.png" alt="Submit Form"></button>
+					<button type="reset"><img src="Project 2 Images/ClearForm.png" alt="Clear Form"></button>
+				</div>
+			</form>
+			<footer>
+				<div>
+					<nav class="p2-foot-nav">
+						<a href="../index.html">ePortfolio</a>
+					</nav>
+				</div>
+			</footer>
+			<script src="script.js"></script>
+		</div>
+	</body>
+
+</html>
